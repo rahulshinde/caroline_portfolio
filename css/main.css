@@ -277,11 +277,6 @@ html {
   html {
     font-size: 26px; } }
 @media (max-width: 1150px) {
-  @keyframes cloud {
-    0% {
-      transform: translateX(0); }
-    100% {
-      transform: translateX(calc(-100vw - 20rem)); } }
   html {
     font-size: 28px; }
 
