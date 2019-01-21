@@ -302,7 +302,11 @@ html {
       transform: translateX(calc(-100vw - 30rem));
       -webkit-transform: translateX(calc(-100vw - 30rem)); } }
   html {
-    font-size: 24px; } }
+    font-size: 24px; }
+
+  #site #cloud1,
+  #site #cloud2 {
+    width: 6rem; } }
 @media (max-width: 900px) {
   html {
     font-size: 24px; }
@@ -431,21 +435,37 @@ html {
 #site #arrow_left,
 #site #slideshow_close {
   position: fixed;
-  height: 2rem; }
+  height: 2rem;
+  transition: transform ease 0.2s;
+  -webkit-transition: transform ease 0.2s; }
 #site #slideshow_close {
   top: 2rem;
-  right: 2rem; }
+  right: 2rem;
+  transform: scale(1);
+  -webkit-transform: scale(1); }
+  #site #slideshow_close:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    cursor: pointer; }
 #site #arrow_right,
 #site #arrow_left {
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%); }
+  top: 50%; }
 #site #arrow_right {
-  right: 2rem; }
+  right: 2rem;
+  transform: translateY(-50%) scale(1);
+  -webkit-transform: translateY(-50%) scale(1); }
+  #site #arrow_right:hover {
+    transform: translateY(-50%) scale(1.1);
+    -webkit-transform: translateY(-50%) scale(1.1);
+    cursor: pointer; }
 #site #arrow_left {
   left: 2rem;
-  transform: translateY(-50%) rotate(180deg);
-  -webkit-transform: translateY(-50%) rotate(180deg); }
+  transform: translateY(-50%) rotate(180deg) scale(1);
+  -webkit-transform: translateY(-50%) rotate(180deg) scale(1); }
+  #site #arrow_left:hover {
+    transform: translateY(-50%) rotate(180deg) scale(1.1);
+    -webkit-transform: translateY(-50%) rotate(180deg) scale(1.1);
+    cursor: pointer; }
 #site .project_image_container figcaption {
   font-size: 0.7rem; }
 #site #works_container h2 {
