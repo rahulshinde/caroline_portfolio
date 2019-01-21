@@ -65,6 +65,11 @@ table {
     transform: translateX(0); }
   100% {
     transform: translateX(calc(-100vw - 10rem)); } }
+@-webkit-keyframes cloud {
+  0% {
+    -webkit-transform: translateX(0); }
+  100% {
+    -webkit-transform: translateX(calc(-100vw - 10rem)); } }
 html {
   font-size: 28px; }
 
