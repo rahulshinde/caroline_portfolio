@@ -472,13 +472,40 @@ html {
     box-shadow: none; }
 
 @media (max-width: 1150px) {
-  #site #works_container {
+  #site #works_container,
+  #site #works_container.inline {
     position: relative;
     margin: 2rem 2rem 8rem 2rem;
-    z-index: 10;
+    z-index: 13;
     text-align: center; }
-    #site #works_container h2 {
+    #site #works_container h2,
+    #site #works_container.inline h2 {
       font-size: 1.7rem; }
+    #site #works_container .works_image_container,
+    #site #works_container .project_image_container,
+    #site #works_container.inline .works_image_container,
+    #site #works_container.inline .project_image_container {
+      display: block;
+      margin: 0 auto 2rem auto;
+      width: auto;
+      height: auto; }
+      #site #works_container .works_image_container img,
+      #site #works_container .project_image_container img,
+      #site #works_container.inline .works_image_container img,
+      #site #works_container.inline .project_image_container img {
+        display: block;
+        margin: 0 auto;
+        width: auto;
+        height: auto;
+        max-width: 100%;
+        max-height: 80vh; }
+      #site #works_container .works_image_container figcaption,
+      #site #works_container .project_image_container figcaption,
+      #site #works_container.inline .works_image_container figcaption,
+      #site #works_container.inline .project_image_container figcaption {
+        position: static;
+        transform: none;
+        margin-top: 0.6rem; }
   #site #works_container.inline {
     left: 2rem;
     right: 2rem; }
@@ -492,13 +519,6 @@ html {
     right: auto;
     height: auto;
     z-index: 13; }
-    #site #works_container.inline figure {
-      height: auto;
-      width: calc(100% - 4rem);
-      margin-bottom: 4rem; }
-      #site #works_container.inline figure img {
-        height: auto;
-        width: 100%; }
   #site #works_wrapper {
     height: auto;
     transform: translateX(0) !important;
@@ -517,18 +537,6 @@ html {
   #site #works_container,
   #site #works_container.inline {
     margin: 5rem 1rem 2rem 1rem; }
-  #site .works_image_container {
-    display: block;
-    margin: 0 auto 2rem auto;
-    width: auto;
-    height: auto; }
-    #site .works_image_container img {
-      display: block;
-      margin: 0 auto;
-      width: auto;
-      height: auto;
-      max-width: 100%;
-      max-height: 80vh; }
   #site #works_container a:link,
   #site #works_container a:visited {
     margin-right: 0; } }
