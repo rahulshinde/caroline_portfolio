@@ -339,7 +339,7 @@ html {
     left: 2rem; } }
 #site #works_container {
   position: relative;
-  margin: 4rem 4rem 8rem 4rem;
+  margin: 4rem 4rem 6rem 4rem;
   z-index: 10;
   text-align: center; }
 #site .works_image_container {
