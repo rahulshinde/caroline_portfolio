@@ -101,6 +101,9 @@ html {
       transform-origin: bottom right;
       transition: transform ease 0.2s;
       -webkit-transition: transform ease 0.2s; }
+      #site .heading a:link:after,
+      #site .heading a:visited:after {
+        content: 'Caroline Kunka'; }
     #site .heading a:hover {
       text-decoration: underline;
       transform: scale(1.05);
@@ -270,11 +273,70 @@ html {
     font-size: 26px; } }
 @media (max-width: 1150px) {
   html {
-    font-size: 25px; }
+    font-size: 28px; }
 
   #site nav {
     padding-left: 5%;
     box-sizing: border-box; } }
+@media (max-width: 950px) {
+  html {
+    font-size: 24px; } }
+@media (max-width: 900px) {
+  html {
+    font-size: 24px; }
+
+  #site header {
+    bottom: auto;
+    top: 0;
+    border-top: none;
+    border-bottom: 2px solid #00cc30; }
+  #site #homepage_image {
+    top: calc(50% + 1rem); }
+  #site #tree,
+  #site #flower {
+    bottom: 0; }
+  #site #sun {
+    top: 6rem; }
+  #site .sub_nav_wrapper:after {
+    top: 2.5rem; }
+  #site .sub_nav_container {
+    top: calc(100% - 0.5rem); }
+  #site .sub_nav_container li a:link,
+  #site .sub_nav_container li a:visited {
+    padding: 1.5rem 0rem 0.5rem 0rem; } }
+@media (max-width: 767px) {
+  html {
+    font-size: 20px; }
+
+  #site .heading {
+    margin-left: 1rem; }
+  #site nav {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 1rem;
+    width: calc(70% - 1rem); }
+  #site .sub_nav_wrapper,
+  #site .sub_nav_link:link,
+  #site .sub_nav_link:visited {
+    margin-right: 0;
+    margin-left: 1rem; }
+  #site .sub_nav_container {
+    text-align: left; } }
+@media (max-width: 650px) {
+  html {
+    font-size: 18px; }
+
+  #site .heading {
+    width: 20%; }
+    #site .heading a:link:after,
+    #site .heading a:visited:after {
+      content: 'C.K.'; }
+  #site nav {
+    width: calc(80% - 1rem); }
+  #site #tree {
+    right: 1rem; }
+  #site #flower {
+    left: 2rem; } }
 #site #works_container {
   position: relative;
   margin: 4rem 4rem 8rem 4rem;
@@ -415,10 +477,11 @@ html {
     margin: 2rem 2rem 8rem 2rem;
     z-index: 10;
     text-align: center; }
+    #site #works_container h2 {
+      font-size: 1.7rem; }
   #site #works_container.inline {
     left: 2rem;
-    right: 2rem; } }
-@media (max-width: 900px) {
+    right: 2rem; }
   #site.project_page {
     height: auto; }
   #site #works_container.inline {
@@ -439,6 +502,41 @@ html {
   #site #works_wrapper {
     height: auto;
     transform: translateX(0) !important;
-    -webkit-transform: translateX(0) !important; } }
+    -webkit-transform: translateX(0) !important; }
+  #site #slideshow_container.open #image_wrapper {
+    left: 6rem;
+    right: 6rem; }
+  #site #slideshow_container.open #slideshow_close {
+    top: 1rem;
+    right: 1rem; }
+  #site #slideshow_container.open #arrow_right {
+    right: 1rem; }
+  #site #slideshow_container.open #arrow_left {
+    left: 1rem; } }
+@media (max-width: 900px) {
+  #site #works_container,
+  #site #works_container.inline {
+    margin: 5rem 1rem 2rem 1rem; }
+  #site .works_image_container {
+    display: block;
+    margin: 0 auto 2rem auto;
+    width: auto;
+    height: auto; }
+    #site .works_image_container img {
+      display: block;
+      margin: 0 auto;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      max-height: 80vh; }
+  #site #works_container a:link,
+  #site #works_container a:visited {
+    margin-right: 0; } }
+@media (max-width: 767px) {
+  #site #works_container h2 {
+    font-size: 1.7rem; } }
+@media (max-width: 580px) {
+  #site #works_container h2 {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=main.css.map */
